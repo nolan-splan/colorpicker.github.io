@@ -1,9 +1,10 @@
 $(document).ready(function() {
     // ask the user if they want to use rgb or hex for generating colors
-    var colorScheme = prompt("Welcome to the color randomizer 5000! Would you like to use RGB or hexadecimal colors? Please enter 'rgb' for RGB, or 'hex' for hexadecimal.");
+    var userInput = prompt("Welcome to the color randomizer 5000! Would you like to use RGB or hexadecimal colors? Please enter 'rgb' for RGB, or 'hex' for hexadecimal.");
+    var colorScheme = userInput.toLowerCase();
 
     // if the user inputs 'rgb' into the prompt, I'm using the 'rgbGenerator()' function to generate the colors
-    if (colorScheme === 'rgb' || colorScheme === 'RGB' || colorScheme === 'Rgb') {
+    if (colorScheme === 'rgb' ) {
         // rgbGenerator generates 3 random numbers between 0(?) maybe 1, and 255. It then creates a string: "rgb(x, y, z)" using these numbers that is returned by the funtion
         function rgbGenerator() {
             var x = Math.floor(Math.random() * 255);
