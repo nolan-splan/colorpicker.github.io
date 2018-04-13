@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // ask the user if they want to use rgb or hex for generating colors
-    var colorScheme = prompt("Welcome to the color randomizer 5000! Would you like to use RGB or hexidecimal colors? Please enter 'rgb' for RGB, or 'hex' for hexidecimal.");
+    var colorScheme = prompt("Welcome to the color randomizer 5000! Would you like to use RGB or hexadecimal colors? Please enter 'rgb' for RGB, or 'hex' for hexadecimal.");
     // if the user inputs 'rgb' into the prompt, I'm using the 'rgbGenerator()' function to generate the colors
     if (colorScheme === 'rgb') {
         // rgbGenerator generates 3 random numbers between 0(?) maybe 1, and 255. It then creates a string: "rgb(x, y, z)" using these numbers that is returned by the funtion
@@ -42,7 +42,7 @@ $(document).ready(function() {
     // if the user inputs 'hex' into the prompt, I'm using the 'hexGenerator()' function to generate the colors
     } else if (colorScheme === 'hex') {
         function hexGenerator() {
-            //create an array of all the possible values within a hexidecimal 'string'
+            //create an array of all the possible values within a hexadecimal 'string'
             var possibilities = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
             //a hex string has 6 characters. So create 6 variables that are set to a random element from the 'possibilities' array
             var a = possibilities[Math.floor(Math.random() * possibilities.length)];
