@@ -4,7 +4,7 @@ $(document).ready(function() {
     var colorScheme = userInput.toLowerCase();
 
     // if the user inputs 'rgb' into the prompt, I'm using the 'rgbGenerator()' function to generate the colors
-    if (colorScheme == 'rgb' ) {
+    if (colorScheme === 'rgb' ) {
         // rgbGenerator generates 3 random numbers between 0(?) maybe 1, and 255. It then creates a string: "rgb(x, y, z)" using these numbers that is returned by the funtion
         function rgbGenerator() {
             var x = Math.floor(Math.random() * 255);
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 $('.rgb3').text(resetColor);
             });
     // if the user inputs 'hex' into the prompt, I'm using the 'hexGenerator()' function to generate the colors
-    } else if (colorScheme == 'hex') {
+    } else if (colorScheme === 'hex') {
         function hexGenerator() {
             //create an array of all the possible values within a hexadecimal 'string'
             var possibilities = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
