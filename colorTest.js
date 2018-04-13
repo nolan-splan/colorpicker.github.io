@@ -88,5 +88,7 @@ $(document).ready(function() {
             $('.rgb2').text(resetColor);
             $('.rgb3').text(resetColor);
         });
+    } else {
+        alert("Please enter a valid input.");
     }
 });
